@@ -7,3 +7,7 @@ A Node.js implementation of the cryptography interface for [libaxolotl-javascrip
 ```
 $ npm install axolotl-crypto
 ```
+
+```
+var crypto = require("axolotl-crypto");
+```
