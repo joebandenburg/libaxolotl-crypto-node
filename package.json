@@ -1,0 +1,34 @@
+{
+  "name": "axolotl-crypto",
+  "version": "1.0.0",
+  "description": "Node.js implementation of cryptography interface for libaxolotl-javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:joebandenburg/libaxolotl-crypto-node.git"
+  },
+  "keywords": [
+    "axolotl",
+    "crypto"
+  ],
+  "author": "Joe Bandenburg <joe@bandenburg.com>",
+  "license": "LGPLv3",
+  "bugs": {
+    "url": "https://github.com/joebandenburg/libaxolotl-crypto-node/issues"
+  },
+  "homepage": "https://github.com/joebandenburg/libaxolotl-crypto-node",
+  "dependencies": {
+    "axolotl-crypto-curve25519": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-jscs": "^1.2.0",
+    "grunt-mocha-test": "^0.12.7",
+    "mocha": "^2.1.0"
+  }
+}
