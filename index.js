@@ -69,14 +69,12 @@ module.exports = {
     },
     encrypt: function(key, message, iv) {
         var cipher = crypto.createCipheriv("aes-256-cbc", toBuffer(key), toBuffer(iv));
-        cipher.setAutoPadding(false);
         var buffer1 = cipher.update(toBuffer(message));
         var buffer2 = cipher.final();
         return toArrayBuffer(Buffer.concat([buffer1, buffer2]));
     },
     decrypt: function(key, ciphertext, iv) {
         var cipher = crypto.createDecipheriv("aes-256-cbc", toBuffer(key), toBuffer(iv));
-        cipher.setAutoPadding(false);
         var buffer1 = cipher.update(toBuffer(ciphertext));
         var buffer2 = cipher.final();
         return toArrayBuffer(Buffer.concat([buffer1, buffer2]));
