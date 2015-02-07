@@ -44,7 +44,7 @@ module.exports = {
         var pair = curve25519.generateKeyPair(privateKey);
         var publicKey = new Uint8Array(33);
         publicKey[0] = 0x05;
-        publicKey.set(pair.public, 1);
+        publicKey.set(new Uint8Array(pair.public), 1);
         return {
             public: publicKey.buffer,
             private: pair.private
